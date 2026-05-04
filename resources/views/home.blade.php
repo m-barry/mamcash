@@ -162,9 +162,9 @@
       <div class="step-circle" id="step3">3</div>
     </div>
     <div id="tab-classique" class="card shadow p-4 home-card">
-      <h5 class="text-primary mb-3 text-center"><i class="fas fa-exchange-alt me-2"></i>Taux de change en GNF</h5>
+      <h5 class="text-primary mb-3 text-center"><i class="fas fa-calculator me-2"></i>Taux de change en GNF</h5>
       <div class="mb-3 text-center text-secondary">
-        Taux de change : <span class="text-success fw-bold" id="rateDisplay">1 EUR = {{ number_format($rates['EUR'] ?? 10000, 0, ',', ' ') }} GNF</span>
+        <span class="text-success fw-bold" id="rateDisplay">1 EUR = {{ number_format($rates['EUR'] ?? 10000, 0, ',', ' ') }} GNF</span>
       </div>
       <div class="d-flex justify-content-center gap-2 mb-4">
         <button type="button" class="btn btn-primary btn-currency active-currency" data-currency="EUR" data-rate="{{ $rates['EUR'] ?? 10000 }}" onclick="selectCurrency(this)">
