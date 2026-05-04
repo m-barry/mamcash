@@ -94,6 +94,62 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.08);
             min-height: 100vh;
         }
+
+        /* ── Harmonisation mobile globale ── */
+        @media (max-width: 768px) {
+            body {
+                font-size: 15px;
+                line-height: 1.35;
+            }
+
+            h1, .h1 { font-size: 1.45rem; }
+            h2, .h2 { font-size: 1.3rem; }
+            h3, .h3 { font-size: 1.15rem; }
+            h4, .h4 { font-size: 1.05rem; }
+            h5, .h5 { font-size: 1rem; }
+            h6, .h6 { font-size: 0.95rem; }
+
+            .container {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+
+            .card {
+                border-radius: 10px;
+            }
+
+            .form-label {
+                font-size: 0.88rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .form-control,
+            .form-select,
+            .input-group-text {
+                min-height: 42px;
+                font-size: 0.92rem;
+            }
+
+            .form-control-lg,
+            .form-select-lg {
+                min-height: 44px;
+                padding: 0.45rem 0.75rem;
+                font-size: 0.95rem;
+            }
+
+            .btn {
+                min-height: 42px;
+                font-size: 0.9rem;
+                border-radius: 0.55rem;
+                padding: 0.45rem 0.8rem;
+            }
+
+            .btn-lg {
+                min-height: 44px;
+                font-size: 0.95rem;
+                padding: 0.5rem 0.95rem;
+            }
+        }
     </style>
     @stack('styles')
 </head>

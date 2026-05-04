@@ -37,6 +37,93 @@
     0%   { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
+
+  .home-switch-btn {
+    width: 170px;
+    min-height: 42px;
+    font-size: .92rem;
+    padding: .4rem .65rem;
+  }
+
+  .home-card {
+    border-radius: .85rem;
+  }
+
+  .home-cta-sticky {
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    padding-top: .55rem;
+    margin-top: .4rem;
+  }
+
+  @media (max-width: 768px) {
+    .mam-banner-wrap {
+      padding: .3rem 0;
+      margin-bottom: .5rem !important;
+    }
+
+    .mam-banner-icon {
+      padding: 0 .55rem;
+      font-size: .95rem;
+    }
+
+    .mam-banner-inner {
+      font-size: .85rem;
+    }
+
+    .home-switch {
+      gap: .45rem !important;
+      margin-bottom: .65rem !important;
+    }
+
+    .home-switch-btn {
+      width: 48%;
+      min-height: 40px;
+      font-size: .85rem;
+      padding: .35rem .45rem;
+    }
+
+    #steps {
+      margin-bottom: .65rem !important;
+    }
+
+    .step-circle {
+      width: 30px;
+      height: 30px;
+      font-size: .78rem;
+    }
+
+    .home-card {
+      padding: .8rem !important;
+      max-height: calc(100vh - 230px);
+      overflow-y: auto;
+    }
+
+    .home-card h5 {
+      margin-bottom: .5rem !important;
+      font-size: .98rem;
+    }
+
+    .home-card .mb-4 {
+      margin-bottom: .65rem !important;
+    }
+
+    .home-card .mb-3 {
+      margin-bottom: .55rem !important;
+    }
+
+    .btn-currency,
+    .btn-rc-currency {
+      padding: .35rem .5rem;
+      font-size: .8rem;
+      min-height: 36px;
+    }
+
+    .home-cta-sticky .btn {
+      min-height: 42px;
+    }
+  }
 </style>
 @endpush
 
@@ -60,11 +147,11 @@
     </div>
     @endif
 
-    <div class="d-flex justify-content-center gap-3 mb-4">
-      <button id="btnClassique" class="btn btn-primary px-4 py-2" onclick="showTab('classique')" style="width:190px">
+    <div class="d-flex justify-content-center home-switch gap-3 mb-4">
+      <button id="btnClassique" class="btn btn-primary home-switch-btn" onclick="showTab('classique')">
         <i class="fas fa-exchange-alt me-2"></i>Transfert classique
       </button>
-      <button id="btnRecharge" class="btn btn-warning px-4 py-2" onclick="showTab('recharge')" style="width:190px">
+      <button id="btnRecharge" class="btn btn-warning home-switch-btn" onclick="showTab('recharge')">
         <i class="fas fa-mobile-alt me-2"></i>Recharge Mobile
       </button>
     </div>
@@ -74,8 +161,8 @@
       <div class="step-circle me-3" id="step2">2</div>
       <div class="step-circle" id="step3">3</div>
     </div>
-    <div id="tab-classique" class="card shadow p-4">
-      <h5 class="text-primary mb-4 text-center"><i class="fas fa-calculator me-2"></i>Convertisseur de devises en GNF</h5>
+    <div id="tab-classique" class="card shadow p-4 home-card">
+      <h5 class="text-primary mb-3 text-center"><i class="fas fa-exchange-alt me-2"></i>Taux de change en GNF</h5>
       <div class="mb-3 text-center text-secondary">
         Taux de change : <span class="text-success fw-bold" id="rateDisplay">1 EUR = {{ number_format($rates['EUR'] ?? 10000, 0, ',', ' ') }} GNF</span>
       </div>
@@ -129,13 +216,13 @@
           </span>
         </div>
       </div>
-      <div class="d-grid">
+      <div class="d-grid home-cta-sticky">
         <a href="{{ route('login') }}" class="btn btn-primary btn-lg">
           <i class="fas fa-paper-plane me-2"></i>Envoyer maintenant
         </a>
       </div>
     </div>
-    <div id="tab-recharge" class="card shadow p-4" style="display:none">
+    <div id="tab-recharge" class="card shadow p-4 home-card" style="display:none">
       <h5 class="text-warning mb-3 text-center"><i class="fas fa-mobile-alt me-2"></i>Recharge Mobile Money</h5>
 
       {{-- Opérateurs --}}
@@ -232,7 +319,7 @@
           </span>
         </div>
       </div>
-      <div class="d-grid">
+      <div class="d-grid home-cta-sticky">
         <a href="{{ route('login') }}" class="btn btn-warning btn-lg">
           <i class="fas fa-mobile-alt me-2"></i>Recharger maintenant
         </a>
