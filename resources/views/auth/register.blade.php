@@ -5,7 +5,7 @@
 <div class="card shadow p-4" style="max-width:650px;width:100%;border-radius:10px;background:#f8f9fa;">
 <div class="text-center mb-4">
   <a href="{{ route('home') }}">
-    <img src="{{ asset('assets/images/MAMCash-logo-light.svg') }}" alt="MAMCash" height="70">
+    <img src="{{ asset('assets/images/mamcash-logo-light.svg') }}" alt="MAMCash" height="70">
   </a>
 </div>
 <h3 class="text-center mb-4">Créer un compte</h3>

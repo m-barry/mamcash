@@ -105,7 +105,7 @@
     <nav class="navbar navbar-expand-lg navbar-MAMCash">
         <div class="container">
             <a class="navbar-brand" href="{{ route('user.dashboard') }}">
-                <img src="{{ asset('assets/images/MAMCash-logo-navbar.svg') }}" alt="MAMCash" height="40"
+                <img src="{{ asset('assets/images/mamcash-logo-navbar.svg') }}" alt="MAMCash" height="40"
                      onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
                 <span style="display:none">MAMCash</span>
             </a>
@@ -175,7 +175,7 @@
     <nav class="navbar navbar-expand-lg navbar-MAMCash">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
-                <img src="{{ asset('assets/images/MAMCash-logo-navbar.svg') }}" alt="MAMCash" height="40"
+                <img src="{{ asset('assets/images/mamcash-logo-navbar.svg') }}" alt="MAMCash" height="40"
                      onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
                 <span style="display:none">MAMCash</span>
             </a>

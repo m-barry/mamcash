@@ -38,7 +38,7 @@
 <nav class="navbar navbar-expand-lg navbar-admin">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ route('admin.dashboard') }}">
-            <img src="{{ asset('assets/images/MAMCash-logo-navbar.svg') }}" alt="MAMCash" height="40"
+            <img src="{{ asset('assets/images/mamcash-logo-navbar.svg') }}" alt="MAMCash" height="40"
                  onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
             <span style="display:none">MAMCash</span>
             &nbsp;Tableau de bord
