@@ -93,7 +93,7 @@
       </form>
       <button type="button" class="btn btn-sm btn-danger" onclick="filterPromos('transfer')">Cible</button>
       <button type="button" class="btn btn-sm btn-warning" onclick="document.getElementById('formPromoTransfer').reset()">REINITIALISER</button>
-      <button type="button" class="btn btn-sm btn-info text-white" onclick="alert('{{ $promotionsTransfer->count() }} promotion(s), {{ $promotionsTransfer->where(`active`,true)->count() }} active(s).')">DIAGNOSTIC</button>
+      <button type="button" class="btn btn-sm btn-info text-white" onclick="alert('{{ $promotionsTransfer->count() }} promotion(s), {{ $promotionsTransfer->where('active', true)->count() }} active(s).')">DIAGNOSTIC</button>
       <button type="button" class="btn btn-sm btn-danger" onclick="if(confirm('Action NUCLEAIRE : supprimer toutes les promos de transfert ?')) document.querySelector('#deleteAllTransfer').submit()">NUCLEAIRE</button>
     </div>
     @if($promotionsTransfer->isEmpty())
@@ -151,7 +151,7 @@
       </form>
       <button type="button" class="btn btn-sm btn-danger" onclick="filterPromos('recharge')">Cible</button>
       <button type="button" class="btn btn-sm btn-warning" onclick="document.getElementById('formPromoRecharge').reset()">REINITIALISER</button>
-      <button type="button" class="btn btn-sm btn-info text-white" onclick="alert('{{ $promotionsRecharge->count() }} promotion(s), {{ $promotionsRecharge->where(`active`,true)->count() }} active(s).')">DIAGNOSTIC</button>
+      <button type="button" class="btn btn-sm btn-info text-white" onclick="alert('{{ $promotionsRecharge->count() }} promotion(s), {{ $promotionsRecharge->where('active', true)->count() }} active(s).')">DIAGNOSTIC</button>
       <button type="button" class="btn btn-sm btn-danger" onclick="if(confirm('Action NUCLEAIRE : supprimer toutes les promos de recharge ?')) document.querySelector('#deleteAllRecharge').submit()">NUCLEAIRE</button>
     </div>
     @if($promotionsRecharge->isEmpty())
