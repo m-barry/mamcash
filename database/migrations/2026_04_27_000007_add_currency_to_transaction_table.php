@@ -9,7 +9,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('transaction', function (Blueprint $table) {
-            $table->string('currency', 5)->default('EUR')->after('amount_sent');
+            if (! Schema::hasColumn('transaction', 'currency')) {
+                $table->string('currency', 5)->default('EUR')->after('amount_sent');
+            }
         });
     }
 
