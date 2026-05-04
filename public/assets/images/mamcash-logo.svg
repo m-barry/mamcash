@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Texte MAM en bleu foncé -->
+  <text x="20" y="120" font-family="serif" font-size="80" font-weight="bold" fill="#1B365D">MAM</text>
+  
+  <!-- Globe avec symbole dollar -->
+  <circle cx="350" cy="80" r="45" fill="none" stroke="#C5941A" stroke-width="3"/>
+  <path d="M315 80 Q350 50 385 80" fill="none" stroke="#C5941A" stroke-width="2"/>
+  <path d="M315 80 Q350 110 385 80" fill="none" stroke="#C5941A" stroke-width="2"/>
+  <line x1="320" y1="80" x2="380" y2="80" stroke="#C5941A" stroke-width="2"/>
+  <line x1="350" y1="40" x2="350" y2="120" stroke="#C5941A" stroke-width="2"/>
+  
+  <!-- Symbole dollar au centre du globe -->
+  <text x="342" y="90" font-family="serif" font-size="24" font-weight="bold" fill="#C5941A">$</text>
+  
+  <!-- Flèche -->
+  <path d="M395 75 L420 80 L395 85 Z" fill="#C5941A"/>
+  <line x1="390" y1="80" x2="420" y2="80" stroke="#C5941A" stroke-width="3"/>
+  
+  <!-- Texte Send en doré -->
+  <text x="50" y="220" font-family="serif" font-size="90" font-weight="bold" fill="#C5941A">Cash</text>
+</svg>
